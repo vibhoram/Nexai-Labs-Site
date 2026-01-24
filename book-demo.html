@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Demo - Nexai Labs</title>
+    <meta name="description" content="Schedule a free consultation with Nexai Labs. Discuss your project vision, timeline, and budget with our expert team.">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="feature-styles.css">
+    <link rel="stylesheet" href="page-styles.css">
+    <link rel="stylesheet" href="footer-enhancements.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="index.html" aria-label="Nexai Labs Home">
+                        <svg width="180" height="30" viewBox="0 0 180 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 15C0 6.71573 6.71573 0 15 0H25L15 30H0V15Z" fill="url(#g1)"/>
+                            <path d="M30 0H45L35 30H20L30 0Z" fill="url(#g2)"/>
+                            <text x="55" y="21" font-family="Inter, sans-serif" font-weight="700" font-size="18" fill="url(#g3)">Nexai Labs</text>
+                            <defs>
+                                <linearGradient id="g1" x1="0" y1="15" x2="25" y2="15" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#6366f1"/><stop offset="1" stop-color="#8b5cf6"/>
+                                </linearGradient>
+                                <linearGradient id="g2" x1="20" y1="15" x2="45" y2="15" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#8b5cf6"/><stop offset="1" stop-color="#a855f7"/>
+                                </linearGradient>
+                                <linearGradient id="g3" x1="55" y1="15" x2="160" y2="15" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#6366f1"/><stop offset="1" stop-color="#8b5cf6"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+                
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#projects">Work</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li class="mobile-only"><a href="book-demo.html">Book Demo</a></li>
+                    <!-- Mobile Menu Footer -->
+                    <li class="mobile-menu-footer">
+                        <div class="menu-status">
+                            <div class="status-dot"></div>
+                            <span>Nexai Labs Systems Online</span>
+                        </div>
+                        <div class="menu-socials">
+                            <p>Interested in working together?</p>
+                            <a href="mailto:support@nexailabs.tech" class="menu-email">support@nexailabs.tech</a>
+                        </div>
+                    </li>
+                </ul>
+                
+                <div class="nav-cta">
+                    <a href="book-demo.html" class="btn-book-demo">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        Book Demo
+                    </a>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+                        </svg>
+                        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                    <button class="btn-signin" id="signinBtn">Get in Touch</button>
+                    <div class="hamburger" id="hamburger">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content" style="padding-top: 100px; min-height: calc(100vh - 200px);">
+        <section class="demo-page-section">
+            <div class="container">
+                <div class="demo-page-header" data-scroll>
+                    <h1 class="gradient-text">Schedule Your Demo</h1>
+                    <p class="demo-subtitle">Choose a time that works best for you. We'll discuss your project vision, timeline, and how we can bring it to life.</p>
+                </div>
+
+                <div class="demo-page-content" data-scroll>
+                    <div class="demo-info-card">
+                        <h2>What to Expect</h2>
+                        <ul class="demo-checklist">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <div>
+                                    <strong>Free 30-Minute Consultation</strong>
+                                    <p>No sales pitch, just genuine advice</p>
+                                </div>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <div>
+                                    <strong>Discuss Your Vision</strong>
+                                    <p>Walk us through your idea and goals</p>
+                                </div>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <div>
+                                    <strong>Get Expert Recommendations</strong>
+                                    <p>Tech stack, timeline, and budget breakdown</p>
+                                </div>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <div>
+                                    <strong>Custom Roadmap</strong>
+                                    <p>Receive a preliminary project plan</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="demo-contact-options">
+                            <h3>Prefer a Different Method?</h3>
+                            <div class="contact-methods">
+                                <a href="mailto:support@nexailabs.tech?subject=Demo Request" class="contact-method">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                    <div>
+                                        <strong>Email Us</strong>
+                                        <span>support@nexailabs.tech</span>
+                                    </div>
+                                </a>
+                                <a href="tel:+14034586277" class="contact-method">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                    <div>
+                                        <strong>Call Us</strong>
+                                        <span>+1 (403) 458-6277</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="demo-scheduler-card">
+                        <div class="scheduler-placeholder">
+                            <svg width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                                <path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01"></path>
+                            </svg>
+                            <h3>Choose Your Preferred Time</h3>
+                            <p>Fill out the form below to request a specific date and time, or contact us directly using the methods on the left.</p>
+
+                            <form class="demo-request-form" id="demoRequestForm" action="https://formsubmit.co/support@nexailabs.tech" method="POST">
+                                <!-- FormSubmit Config -->
+                                <input type="hidden" name="_subject" value="🎯 New Demo Request - Nexai Labs">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_template" value="box">
+                                <input type="text" name="_honey" style="display:none">
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="demoName">Full Name *</label>
+                                        <input type="text" id="demoName" name="name" placeholder="John Doe" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="demoEmail">Email *</label>
+                                        <input type="email" id="demoEmail" name="email" placeholder="john@company.com" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="demoPhone">Phone (Optional)</label>
+                                        <input type="tel" id="demoPhone" name="phone" placeholder="+1 (403) 458-6277">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="demoCompany">Company (Optional)</label>
+                                        <input type="text" id="demoCompany" name="company" placeholder="Your Company">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="demoDate">Preferred Date *</label>
+                                    <input type="date" id="demoDate" name="date" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="demoTime">Preferred Time (EST) *</label>
+                                    <select id="demoTime" name="time" required>
+                                        <option value="">Select a time slot</option>
+                                        <option value="9:00 AM">9:00 AM</option>
+                                        <option value="10:00 AM">10:00 AM</option>
+                                        <option value="11:00 AM">11:00 AM</option>
+                                        <option value="12:00 PM">12:00 PM</option>
+                                        <option value="1:00 PM">1:00 PM</option>
+                                        <option value="2:00 PM">2:00 PM</option>
+                                        <option value="3:00 PM">3:00 PM</option>
+                                        <option value="4:00 PM">4:00 PM</option>
+                                        <option value="5:00 PM">5:00 PM</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="demoProject">Brief Project Description *</label>
+                                    <textarea id="demoProject" name="project" rows="4" placeholder="Tell us about your project idea, goals, and any specific features you have in mind..." required></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-block">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                                    </svg>
+                                    Request Demo
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- AI Chatbot -->
+    <div class="ai-chatbot-widget" id="aiChatbot">
+        <button class="chatbot-toggle" id="chatbotToggle" aria-label="Open AI Assistant">
+            <svg class="bot-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="10" rx="2"></rect>
+                <circle cx="12" cy="5" r="2"></circle>
+                <path d="M12 7v4"></path>
+                <line x1="8" y1="16" x2="8" y2="16"></line>
+                <line x1="16" y1="16" x2="16" y2="16"></line>
+            </svg>
+            <svg class="close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-header">
+                <div class="chatbot-title">
+                    <div class="ai-pulse"></div>
+                    <span>Nexai Assistant</span>
+                </div>
+                <button class="chatbot-minimize" id="chatbotMinimize" aria-label="Minimize chat">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="bot-message">
+                    <div class="message-avatar">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/>
+                        </svg>
+                    </div>
+                    <div class="message-content">
+                        <p>👋 Hey there! I'm your AI assistant for Nexai Labs.
+
+I can help you with:
+[1] 💰 Pricing estimates
+[2] 📅 Scheduling a demo
+[3] 📧 Contacting our team
+[4] 🚀 Viewing our work
+[5] ⚙️ Learning about our tech stack
+
+What would you like to know? Just type a number!</p>
+                        <div class="quick-actions">
+                            <button class="quick-btn" data-action="pricing">Get Pricing</button>
+                            <button class="quick-btn" data-action="demo">Book Demo</button>
+                            <button class="quick-btn" data-action="contact">Contact Sales</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <form class="chatbot-input-form" id="chatbotForm">
+                <input type="text" id="chatbotInput" placeholder="Ask me anything..." autocomplete="off">
+                <button type="submit" aria-label="Send message">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sign In / Contact Modal -->
+    <div class="modal modal-overlay" id="signinModal">
+        <div class="modal-content contact-modal">
+            <button class="modal-close" id="modalClose">×</button>
+            
+            <div class="modal-header">
+                <h2>Start a Project</h2>
+                <p>Tell us about your vision. We'll build the reality.</p>
+            </div>
+
+            <form class="modal-form" id="notifyForm" action="https://formsubmit.co/support@nexailabs.tech" method="POST">
+                <!-- FormSubmit Configuration -->
+                <input type="hidden" name="_subject" value="New Project Inquiry - Nexai Labs">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="https://nexailabs.tech/thanks.html">
+
+                <div class="form-group">
+                    <label for="clientName">Name</label>
+                    <input type="text" id="clientName" name="name" placeholder="John Doe" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Project Type</label>
+                    <div class="custom-dropdown" id="projectTypeDropdown">
+                        <input type="hidden" name="project_type" id="projectTypeInput" required>
+                        <div class="dropdown-selected" tabindex="0">
+                            <span>Select Project Type...</span>
+                            <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="dropdown-options">
+                            <div class="dropdown-option" data-value="SaaS Platform">
+                                <span class="option-icon">🚀</span> SaaS Platform
+                            </div>
+                            <div class="dropdown-option" data-value="E-Commerce">
+                                <span class="option-icon">🛍️</span> E-Commerce
+                            </div>
+                            <div class="dropdown-option" data-value="Corporate Website">
+                                <span class="option-icon">🏢</span> Corporate Website
+                            </div>
+                            <div class="dropdown-option" data-value="Mobile App">
+                                <span class="option-icon">📱</span> Mobile App
+                            </div>
+                            <div class="dropdown-option" data-value="AI Integration">
+                                <span class="option-icon">🤖</span> AI Integration
+                            </div>
+                            <div class="dropdown-option" data-value="Other">
+                                <span class="option-icon">✨</span> Other
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group" id="otherTypeGroup" style="display: none;">
+                    <label for="otherType">Specify Type</label>
+                    <input type="text" id="otherType" name="other_type_details" placeholder="e.g. VR Experience, Browser Extension...">
+                </div>
+
+                <div class="form-group">
+                    <label for="clientEmail">Email</label>
+                    <input type="email" id="clientEmail" name="email" placeholder="john@company.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="projectDesc">Project Context</label>
+                    <textarea id="projectDesc" name="message" rows="3" placeholder="Brief overview of your requirements and goals..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">
+                    <span>Initialize Project</span>
+                    <svg class="send-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg width="160" height="28" viewBox="0 0 180 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 15C0 6.71573 6.71573 0 15 0H25L15 30H0V15Z" fill="url(#gf1)"/>
+                            <path d="M30 0H45L35 30H20L30 0Z" fill="url(#gf2)"/>
+                            <text x="55" y="21" font-family="Inter, sans-serif" font-weight="700" font-size="18" fill="white">Nexai Labs</text>
+                            <defs>
+                                <linearGradient id="gf1" x1="0" y1="15" x2="25" y2="15" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#6366f1"/><stop offset="1" stop-color="#8b5cf6"/>
+                                </linearGradient>
+                                <linearGradient id="gf2" x1="20" y1="15" x2="45" y2="15" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#8b5cf6"/><stop offset="1" stop-color="#a855f7"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <p class="footer-description">Building innovative digital products that solve real problems. Based globally, shipping worldwide.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#projects">Work</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="copyright.html">Copyright</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nexai Labs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="nav-active.js"></script>
+    <script>
+        // Set minimum date to today
+        const dateInput = document.getElementById('demoDate');
+        if (dateInput) {
+            const today = new Date().toISOString().split('T')[0];
+            dateInput.min = today;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,521 @@
+/* ===================================
+   STANDALONE PAGE STYLES
+   Book Demo & Pricing Calculator Pages
+   =================================== */
+
+/* ==================== BOOK DEMO PAGE ==================== */
+
+.demo-page-section {
+    padding: 4rem 0;
+    min-height: 60vh;
+}
+
+.demo-page-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.demo-page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.demo-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.demo-page-content {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.demo-info-card {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] .demo-info-card {
+    background: rgba(20, 20, 35, 0.6);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.demo-info-card h2 {
+    font-size: 1.75rem;
+   margin-bottom: 2rem;
+    color: var(--text-dark);
+}
+
+[data-theme="dark"] .demo-info-card h2 {
+    color: var(--text-light);
+}
+
+.demo-checklist {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.demo-checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.demo-checklist svg {
+    width: 28px;
+    height: 28px;
+    color: #10b981;
+    flex-shrink: 0;
+    margin-top: 0.25rem;
+}
+
+.demo-checklist strong {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+    color: var(--text-dark);
+}
+
+[data-theme="dark"] .demo-checklist strong {
+    color: var(--text-light);
+}
+
+.demo-checklist p {
+    margin: 0;
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.demo-contact-options {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] .demo-contact-options {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.demo-contact-options h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-dark);
+}
+
+[data-theme="dark"] .demo-contact-options h3 {
+    color: var(--text-light);
+}
+
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem;
+    background: rgba(99, 102, 241, 0.05);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.contact-method:hover {
+    background: rgba(99, 102, 241, 0.1);
+    border-color: rgba(99, 102, 241, 0.4);
+    transform: translateX(5px);
+}
+
+.contact-method svg {
+    width: 24px;
+    height: 24px;
+    color: var(--primary);
+    flex-shrink: 0;
+}
+
+.contact-method strong {
+    display: block;
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+    color: var(--text-dark);
+}
+
+[data-theme="dark"] .contact-method strong {
+    color: var(--text-light);
+}
+
+.contact-method span {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.demo-scheduler-card {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] .demo-scheduler-card {
+    background: rgba(20, 20, 35, 0.6);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.scheduler-placeholder {
+    text-align: center;
+}
+
+.scheduler-placeholder svg {
+    margin: 0 auto 2rem;
+    opacity: 0.15;
+    color: var(--primary);
+    display: none; /* Hide the giant decorative SVG */
+}
+
+.scheduler-placeholder h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+    text-align: center;
+}
+
+[data-theme="dark"] .scheduler-placeholder h3 {
+    color: var(--text-light);
+}
+
+.scheduler-placeholder > p {
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.demo-request-form {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.demo-request-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.demo-request-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    text-align: left;
+}
+
+.demo-request-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.demo-request-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+}
+
+[data-theme="dark"] .demo-request-form label {
+    color: var(--text-light);
+}
+
+.demo-request-form input,
+.demo-request-form select,
+.demo-request-form textarea {
+    width: 100%;
+    padding: 0.875rem 1.25rem;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    color: var(--text-dark);
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+[data-theme="dark"] .demo-request-form input,
+[data-theme="dark"] .demo-request-form select,
+[data-theme="dark"] .demo-request-form textarea {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.1);
+    color: var(--text-light);
+}
+
+.demo-request-form input:focus,
+.demo-request-form select:focus,
+.demo-request-form textarea:focus {
+    background: rgba(255, 255, 255, 0.8);
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+[data-theme="dark"] .demo-request-form input:focus,
+[data-theme="dark"] .demo-request-form select:focus,
+[data-theme="dark"] .demo-request-form textarea:focus {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+.demo-request-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.demo-request-form select {
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236366f1' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    padding-right: 3rem;
+    appearance: none;
+}
+
+.demo-request-form input::placeholder,
+.demo-request-form textarea::placeholder {
+    color: var(--text-light);
+    opacity: 0.6;
+}
+
+/* Date input specific styling */
+.demo-request-form input[type="date"] {
+    position: relative;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%236366f1' stroke-width='2'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    padding-right: 3rem;
+}
+
+.demo-request-form input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    right: 1rem;
+    cursor: pointer;
+    opacity: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-block {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    max-height: 50px;
+    text-align: center;
+}
+
+/* ==================== PRICING PAGE ==================== */
+
+.pricing-page-section {
+    padding: 4rem 0;
+    min-height: 60vh;
+}
+
+.pricing-page-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.pricing-page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.pricing-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.pricing-calculator-wrapper {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.pricing-info-card {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] .pricing-info-card {
+    background: rgba(20, 20, 35, 0.6);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.pricing-info-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-dark);
+}
+
+[data-theme="dark"] .pricing-info-card h3 {
+    color: var(--text-light);
+}
+
+.pricing-features {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.pricing-features li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--text-dark);
+}
+
+[data-theme="dark"] .pricing-features li {
+    color: var(--text-light);
+}
+
+.pricing-features svg {
+    width: 20px;
+    height: 20px;
+    color: #10b981;
+    flex-shrink: 0;
+}
+
+.pricing-addons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.pricing-addons li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background: rgba(0, 0, 0, 0.02);
+    border-radius: 8px;
+}
+
+[data-theme="dark"] .pricing-addons li {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.pricing-addons strong {
+    font-size: 0.95rem;
+    color: var(--text-dark);
+}
+
+[data-theme="dark"] .pricing-addons strong {
+    color: var(--text-light);
+}
+
+.pricing-addons span {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.pricing-cta-box {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
+    border-radius: 12px;
+    text-align: center;
+}
+
+.pricing-cta-box p {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+[data-theme="dark"] .pricing-cta-box p {
+    color: var(--text-light);
+}
+
+.btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: white;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    border-radius: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.calc-option small {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-light);
+    margin-top: 0.25rem;
+}
+
+/* ==================== RESPONSIVE ==================== */
+
+@media (max-width: 768px) {
+    .demo-page-content,
+    .pricing-calculator-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .demo-page-header h1,
+    .pricing-page-header h1 {
+        font-size: 2rem;
+    }
+
+    .demo-subtitle,
+    .pricing-subtitle {
+        font-size: 1rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
