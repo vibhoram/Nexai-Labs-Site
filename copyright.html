@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Service - Nexai Labs</title>
-    <meta name="description" content="Terms of Service for Nexai Labs products and services.">
+    <title>Copyright Notice - Nexai Labs</title>
+    <meta name="description" content="Copyright and intellectual property information for Nexai Labs.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -174,6 +174,47 @@
             margin: 0;
             color: var(--text);
         }
+        .copyright-notice {
+            padding: 2rem;
+            background: var(--bg-alt);
+            border: 1px solid var(--border);
+            border-radius: 1rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+        .copyright-notice .symbol {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        .copyright-notice p {
+            margin: 0;
+            font-size: 1.125rem;
+            color: var(--text);
+        }
+        .trademark-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .trademark-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 1.25rem;
+            background: var(--bg-alt);
+            border: 1px solid var(--border);
+            border-radius: 0.75rem;
+        }
+        .trademark-item svg {
+            width: 24px;
+            height: 24px;
+            color: var(--primary);
+        }
+        .trademark-item span {
+            font-weight: 600;
+        }
         .contact-box {
             padding: 2rem;
             background: var(--bg-alt);
@@ -233,17 +274,17 @@
                 <div class="logo">
                     <a href="index.html" aria-label="Nexai Labs Home">
                         <svg width="180" height="30" viewBox="0 0 180 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 15C0 6.71573 6.71573 0 15 0H25L15 30H0V15Z" fill="url(#g1t)"/>
-                            <path d="M30 0H45L35 30H20L30 0Z" fill="url(#g2t)"/>
-                            <text x="55" y="21" font-family="Inter, sans-serif" font-weight="700" font-size="18" fill="url(#g3t)">Nexai Labs</text>
+                            <path d="M0 15C0 6.71573 6.71573 0 15 0H25L15 30H0V15Z" fill="url(#g1c)"/>
+                            <path d="M30 0H45L35 30H20L30 0Z" fill="url(#g2c)"/>
+                            <text x="55" y="21" font-family="Inter, sans-serif" font-weight="700" font-size="18" fill="url(#g3c)">Nexai Labs</text>
                             <defs>
-                                <linearGradient id="g1t" x1="0" y1="15" x2="25" y2="15" gradientUnits="userSpaceOnUse">
+                                <linearGradient id="g1c" x1="0" y1="15" x2="25" y2="15" gradientUnits="userSpaceOnUse">
                                     <stop stop-color="#6366f1"/><stop offset="1" stop-color="#8b5cf6"/>
                                 </linearGradient>
-                                <linearGradient id="g2t" x1="20" y1="15" x2="45" y2="15" gradientUnits="userSpaceOnUse">
+                                <linearGradient id="g2c" x1="20" y1="15" x2="45" y2="15" gradientUnits="userSpaceOnUse">
                                     <stop stop-color="#8b5cf6"/><stop offset="1" stop-color="#a855f7"/>
                                 </linearGradient>
-                                <linearGradient id="g3t" x1="55" y1="15" x2="160" y2="15" gradientUnits="userSpaceOnUse">
+                                <linearGradient id="g3c" x1="55" y1="15" x2="160" y2="15" gradientUnits="userSpaceOnUse">
                                     <stop stop-color="#6366f1"/><stop offset="1" stop-color="#8b5cf6"/>
                                 </linearGradient>
                             </defs>
@@ -280,16 +321,14 @@
             <div class="legal-hero-content">
                 <div class="legal-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                        <polyline points="14 2 14 8 20 8"></polyline>
-                        <line x1="16" y1="13" x2="8" y2="13"></line>
-                        <line x1="16" y1="17" x2="8" y2="17"></line>
-                        <polyline points="10 9 9 9 8 9"></polyline>
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M14.83 14.83a4 4 0 1 1-5.66-5.66 4 4 0 0 1 5.66 5.66z"></path>
+                        <line x1="12" y1="8" x2="12" y2="8"></line>
                     </svg>
                 </div>
                 <div>
-                    <h1>Terms of Service</h1>
-                    <p style="color: var(--text-light); max-width: 500px;">Please read these terms carefully before using our services. By using Nexai Labs, you agree to these terms.</p>
+                    <h1>Copyright Notice</h1>
+                    <p style="color: var(--text-light); max-width: 500px;">Information about intellectual property rights, trademarks, and permitted use of Nexai Labs content.</p>
                     <div class="meta">
                         <div class="meta-item">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -298,21 +337,13 @@
                                 <line x1="8" y1="2" x2="8" y2="6"></line>
                                 <line x1="3" y1="10" x2="21" y2="10"></line>
                             </svg>
-                            Effective: January 1, 2026
+                            Last Updated: January 2026
                         </div>
                         <div class="meta-item">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <polyline points="12 6 12 12 16 14"></polyline>
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                             </svg>
-                            ~10 min read
-                        </div>
-                        <div class="meta-item">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-                            </svg>
-                            Version 1.0
+                            All Rights Reserved
                         </div>
                     </div>
                 </div>
@@ -327,128 +358,150 @@
             <aside class="legal-sidebar">
                 <div class="toc-title">Table of Contents</div>
                 <ul class="toc-list">
-                    <li><a href="#acceptance"><span class="toc-num">1</span> Acceptance of Terms</a></li>
-                    <li><a href="#services"><span class="toc-num">2</span> Description of Services</a></li>
-                    <li><a href="#accounts"><span class="toc-num">3</span> User Accounts</a></li>
-                    <li><a href="#acceptable-use"><span class="toc-num">4</span> Acceptable Use</a></li>
-                    <li><a href="#ip"><span class="toc-num">5</span> Intellectual Property</a></li>
-                    <li><a href="#payments"><span class="toc-num">6</span> Payment Terms</a></li>
-                    <li><a href="#warranty"><span class="toc-num">7</span> Disclaimer</a></li>
-                    <li><a href="#liability"><span class="toc-num">8</span> Limitation of Liability</a></li>
-                    <li><a href="#indemnification"><span class="toc-num">9</span> Indemnification</a></li>
-                    <li><a href="#changes"><span class="toc-num">10</span> Changes to Terms</a></li>
-                    <li><a href="#governing"><span class="toc-num">11</span> Governing Law</a></li>
-                    <li><a href="#contact"><span class="toc-num">12</span> Contact</a></li>
+                    <li><a href="#ownership"><span class="toc-num">1</span> Ownership</a></li>
+                    <li><a href="#trademarks"><span class="toc-num">2</span> Trademarks</a></li>
+                    <li><a href="#permitted"><span class="toc-num">3</span> Permitted Use</a></li>
+                    <li><a href="#prohibited"><span class="toc-num">4</span> Prohibited Use</a></li>
+                    <li><a href="#third-party"><span class="toc-num">5</span> Third-Party Content</a></li>
+                    <li><a href="#dmca"><span class="toc-num">6</span> DMCA Policy</a></li>
+                    <li><a href="#licensing"><span class="toc-num">7</span> Licensing</a></li>
+                    <li><a href="#contact"><span class="toc-num">8</span> Contact</a></li>
                 </ul>
             </aside>
 
             <!-- Content -->
             <div class="legal-content">
-                <p>Welcome to Nexai Labs. These Terms of Service ("Terms") govern your access to and use of the websites, products, and services (collectively, the "Services") provided by Nexai Labs ("we," "us," or "our").</p>
-                
-                <div class="highlight-box">
-                    <p><strong>Important:</strong> By accessing or using our Services, you agree to be bound by these Terms. If you do not agree, please do not use our Services.</p>
+                <div class="copyright-notice">
+                    <div class="symbol">©</div>
+                    <p><strong>© 2024-2026 Nexai Labs. All Rights Reserved.</strong></p>
                 </div>
 
-                <section id="acceptance">
-                    <h2><span class="section-num">1</span> Acceptance of Terms</h2>
-                    <p>By creating an account, accessing, or using any of our Services, you acknowledge that you have read, understood, and agree to be bound by these Terms and our Privacy Policy.</p>
-                    <p>If you are using our Services on behalf of an organization, you represent and warrant that you have the authority to bind that organization to these Terms.</p>
-                </section>
-
-                <section id="services">
-                    <h2><span class="section-num">2</span> Description of Services</h2>
-                    <p>Nexai Labs provides various digital products and services, including but not limited to:</p>
+                <section id="ownership">
+                    <h2><span class="section-num">1</span> Copyright Ownership</h2>
+                    <p>All content on the Nexai Labs website and associated products, including but not limited to:</p>
                     <ul>
-                        <li><strong>The Forge (Focus or Fall)</strong> — A productivity and focus tracking platform</li>
-                        <li><strong>ApexFlow</strong> — A habit tracking and accountability application</li>
-                        <li><strong>Client Projects</strong> — Custom software development services</li>
+                        <li>Text, articles, documentation, and written materials</li>
+                        <li>Graphics, logos, icons, and visual designs</li>
+                        <li>User interface designs and layouts</li>
+                        <li>Source code, software, and applications</li>
+                        <li>Audio, video, and multimedia content</li>
+                        <li>Databases and data compilations</li>
                     </ul>
-                    <p>We reserve the right to modify, suspend, or discontinue any aspect of our Services at any time without prior notice.</p>
+                    <p>...are the exclusive property of Nexai Labs or its licensors and are protected by international copyright laws, treaties, and conventions.</p>
                 </section>
 
-                <section id="accounts">
-                    <h2><span class="section-num">3</span> User Accounts</h2>
-                    <h3>3.1 Account Creation</h3>
-                    <p>To access certain features of our Services, you may be required to create an account. You agree to provide accurate, current, and complete information during the registration process.</p>
+                <section id="trademarks">
+                    <h2><span class="section-num">2</span> Trademarks</h2>
+                    <p>The following are trademarks or registered trademarks of Nexai Labs:</p>
                     
-                    <h3>3.2 Account Security</h3>
-                    <p>You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. Notify us immediately of any unauthorized use.</p>
-                    
-                    <h3>3.3 Account Termination</h3>
-                    <p>We reserve the right to suspend or terminate your account at any time for any reason, including violation of these Terms, without prior notice or liability.</p>
-                </section>
-
-                <section id="acceptable-use">
-                    <h2><span class="section-num">4</span> Acceptable Use</h2>
-                    <p>You agree not to:</p>
-                    <ul>
-                        <li>Use our Services for any unlawful purpose or in violation of applicable laws</li>
-                        <li>Attempt to gain unauthorized access to our systems or accounts</li>
-                        <li>Interfere with or disrupt the integrity or performance of our Services</li>
-                        <li>Upload or transmit viruses, malware, or malicious code</li>
-                        <li>Harass, abuse, or harm other users</li>
-                        <li>Send spam or unsolicited communications</li>
-                        <li>Reverse engineer, decompile, or disassemble our Services</li>
-                        <li>Use automated systems to extract data without permission</li>
-                    </ul>
-                </section>
-
-                <section id="ip">
-                    <h2><span class="section-num">5</span> Intellectual Property</h2>
-                    <h3>5.1 Our Content</h3>
-                    <p>All content, features, and functionality of our Services are owned by Nexai Labs or our licensors and protected by international copyright, trademark, and intellectual property laws.</p>
-                    
-                    <h3>5.2 Your Content</h3>
-                    <p>You retain ownership of content you submit through our Services. By submitting, you grant us a worldwide, non-exclusive, royalty-free license to use such content in connection with providing our Services.</p>
-                </section>
-
-                <section id="payments">
-                    <h2><span class="section-num">6</span> Payment Terms</h2>
-                    <p>For paid Services:</p>
-                    <ul>
-                        <li>All fees are stated in applicable pricing and are exclusive of taxes</li>
-                        <li>Subscription fees are billed in advance on a recurring basis</li>
-                        <li>You authorize us to charge your payment method for all fees due</li>
-                        <li>Refunds are provided in accordance with individual product policies</li>
-                    </ul>
-                </section>
-
-                <section id="warranty">
-                    <h2><span class="section-num">7</span> Disclaimer of Warranties</h2>
-                    <div class="highlight-box">
-                        <p>OUR SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED.</p>
+                    <div class="trademark-list">
+                        <div class="trademark-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                <polyline points="2 17 12 22 22 17"></polyline>
+                                <polyline points="2 12 12 17 22 12"></polyline>
+                            </svg>
+                            <span>Nexai Labs™</span>
+                        </div>
+                        <div class="trademark-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                            </svg>
+                            <span>The Forge™</span>
+                        </div>
+                        <div class="trademark-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 20V10"></path>
+                                <path d="M12 20V4"></path>
+                                <path d="M6 20v-6"></path>
+                            </svg>
+                            <span>ApexFlow™</span>
+                        </div>
+                        <div class="trademark-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 16v-4"></path>
+                                <path d="M12 8h.01"></path>
+                            </svg>
+                            <span>Focus or Fall™</span>
+                        </div>
                     </div>
-                    <p>We do not warrant that our Services will be uninterrupted, error-free, or completely secure. Your use of our Services is at your own risk.</p>
+                    
+                    <p>Unauthorized use of these trademarks is strictly prohibited and may constitute trademark infringement.</p>
                 </section>
 
-                <section id="liability">
-                    <h2><span class="section-num">8</span> Limitation of Liability</h2>
-                    <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, NEXAI LABS SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES.</p>
-                    <p>Our total liability shall not exceed the amount you paid us in the twelve (12) months preceding the claim.</p>
+                <section id="permitted">
+                    <h2><span class="section-num">3</span> Permitted Use</h2>
+                    <p>You may:</p>
+                    <ul>
+                        <li>View and browse our website for personal, non-commercial purposes</li>
+                        <li>Print or download pages for personal reference only</li>
+                        <li>Share links to our public pages on social media</li>
+                        <li>Quote brief excerpts with proper attribution and a link back to the source</li>
+                        <li>Use our products in accordance with their respective license agreements</li>
+                    </ul>
                 </section>
 
-                <section id="indemnification">
-                    <h2><span class="section-num">9</span> Indemnification</h2>
-                    <p>You agree to indemnify, defend, and hold harmless Nexai Labs and our officers, directors, employees, and agents from any claims, damages, losses, liabilities, and expenses arising out of your use of our Services or violation of these Terms.</p>
+                <section id="prohibited">
+                    <h2><span class="section-num">4</span> Prohibited Use</h2>
+                    <div class="highlight-box">
+                        <p><strong>Without prior written permission, you may NOT:</strong></p>
+                    </div>
+                    <ul>
+                        <li>Copy, reproduce, or distribute our content for commercial purposes</li>
+                        <li>Modify, adapt, or create derivative works from our content</li>
+                        <li>Remove copyright notices, watermarks, or proprietary markings</li>
+                        <li>Use our trademarks without authorization</li>
+                        <li>Frame or mirror any part of our website</li>
+                        <li>Use automated systems to scrape or extract content</li>
+                        <li>Reverse engineer, decompile, or disassemble our software</li>
+                        <li>Sublicense, sell, or transfer any rights to our intellectual property</li>
+                    </ul>
                 </section>
 
-                <section id="changes">
-                    <h2><span class="section-num">10</span> Changes to Terms</h2>
-                    <p>We may update these Terms from time to time. We will notify you of material changes by posting the new Terms and updating the "Effective Date." Continued use indicates acceptance of updated Terms.</p>
+                <section id="third-party">
+                    <h2><span class="section-num">5</span> Third-Party Content</h2>
+                    <p>Our website and products may include content from third parties, such as:</p>
+                    <ul>
+                        <li>Open-source software libraries and frameworks</li>
+                        <li>Stock images and icons (used under license)</li>
+                        <li>Fonts (Google Fonts, licensed fonts)</li>
+                        <li>APIs and integrations</li>
+                    </ul>
+                    <p>All third-party content remains the property of its respective owners and is used in accordance with their licensing terms.</p>
                 </section>
 
-                <section id="governing">
-                    <h2><span class="section-num">11</span> Governing Law</h2>
-                    <p>These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in which Nexai Labs operates, without regard to conflict of law provisions.</p>
+                <section id="dmca">
+                    <h2><span class="section-num">6</span> DMCA Policy</h2>
+                    <p>We respect the intellectual property rights of others. If you believe your copyrighted work has been infringed on our platform, please send a DMCA takedown notice including:</p>
+                    <ul>
+                        <li>Your contact information (name, address, email, phone)</li>
+                        <li>Identification of the copyrighted work claimed to be infringed</li>
+                        <li>Identification of the infringing material with sufficient detail to locate it</li>
+                        <li>A statement that you have a good faith belief that the use is not authorized</li>
+                        <li>A statement, under penalty of perjury, that the information is accurate</li>
+                        <li>Your physical or electronic signature</li>
+                    </ul>
+                    <p>Send DMCA notices to: <a href="mailto:legal@nexailabs.tech">legal@nexailabs.tech</a></p>
+                </section>
+
+                <section id="licensing">
+                    <h2><span class="section-num">7</span> Licensing Inquiries</h2>
+                    <p>If you are interested in licensing our content, technology, or trademarks for commercial purposes, please contact our licensing department. We offer various licensing arrangements including:</p>
+                    <ul>
+                        <li>Content licensing for publications</li>
+                        <li>White-label software solutions</li>
+                        <li>Technology partnerships</li>
+                        <li>Brand collaborations</li>
+                    </ul>
                 </section>
 
                 <section id="contact">
-                    <h2><span class="section-num">12</span> Contact Information</h2>
-                    <p>If you have questions about these Terms, please contact us.</p>
+                    <h2><span class="section-num">8</span> Contact Information</h2>
+                    <p>For copyright inquiries, licensing requests, or to report infringement, please contact us.</p>
                     
                     <div class="contact-box">
-                        <h3>Get in Touch</h3>
+                        <h3>Legal & Licensing Department</h3>
                         <div class="contact-links">
                             <a href="mailto:legal@nexailabs.tech" class="contact-link">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -479,14 +532,14 @@
                 <div class="footer-brand">
                     <a href="index.html" class="footer-logo">
                         <svg width="160" height="28" viewBox="0 0 180 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 15C0 6.71573 6.71573 0 15 0H25L15 30H0V15Z" fill="url(#gft1)"/>
-                            <path d="M30 0H45L35 30H20L30 0Z" fill="url(#gft2)"/>
+                            <path d="M0 15C0 6.71573 6.71573 0 15 0H25L15 30H0V15Z" fill="url(#gfc1)"/>
+                            <path d="M30 0H45L35 30H20L30 0Z" fill="url(#gfc2)"/>
                             <text x="55" y="21" font-family="Inter, sans-serif" font-weight="700" font-size="18" fill="white">Nexai Labs</text>
                             <defs>
-                                <linearGradient id="gft1" x1="0" y1="15" x2="25" y2="15" gradientUnits="userSpaceOnUse">
+                                <linearGradient id="gfc1" x1="0" y1="15" x2="25" y2="15" gradientUnits="userSpaceOnUse">
                                     <stop stop-color="#6366f1"/><stop offset="1" stop-color="#8b5cf6"/>
                                 </linearGradient>
-                                <linearGradient id="gft2" x1="20" y1="15" x2="45" y2="15" gradientUnits="userSpaceOnUse">
+                                <linearGradient id="gfc2" x1="20" y1="15" x2="45" y2="15" gradientUnits="userSpaceOnUse">
                                     <stop stop-color="#8b5cf6"/><stop offset="1" stop-color="#a855f7"/>
                                 </linearGradient>
                             </defs>
@@ -505,6 +558,7 @@
                     <h4>Legal</h4>
                     <a href="terms.html">Terms of Service</a>
                     <a href="privacy.html">Privacy Policy</a>
+                    <a href="copyright.html">Copyright</a>
                 </div>
             </div>
             <div class="footer-bottom">
