@@ -829,6 +829,44 @@ function initLazyLoading() {
 }
 
 // ============================================
+// PROJECT DEMO VIDEOS
+// ============================================
+function initProjectVideos() {
+    const videos = document.querySelectorAll('.project-demo-video');
+    if (!videos.length) return;
+
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    videos.forEach(video => {
+        const mockup = video.closest('.project-mockup-video');
+
+        if (prefersReducedMotion) {
+            video.removeAttribute('autoplay');
+            return;
+        }
+
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        video.play().catch(() => {});
+                        mockup?.classList.add('is-playing');
+                    } else {
+                        video.pause();
+                        mockup?.classList.remove('is-playing');
+                    }
+                });
+            }, { threshold: 0.35 });
+
+            observer.observe(video);
+        } else {
+            video.play().catch(() => {});
+            mockup?.classList.add('is-playing');
+        }
+    });
+}
+
+// ============================================
 // PRELOADER
 // ============================================
 window.addEventListener('load', () => {
@@ -868,6 +906,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     
     // Lazy loading
     initLazyLoading();
+
+    // Project demo videos
+    initProjectVideos();
     
     // Stats counter observer
     const statsSection = document.querySelector('.stats-section');

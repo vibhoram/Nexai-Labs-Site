@@ -1,0 +1,23 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "Nexai Labs is a premium, high-performance technology showcase. This platform serves as the central hub for our cutting-edge digital products, featuring high-end web interactions and a sophisticated design system inspired by industry leaders like Stripe and Linear.",
+  "main": "datepicker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vibhoram/Nexai-Labs-Site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vibhoram/Nexai-Labs-Site/issues"
+  },
+  "homepage": "https://github.com/vibhoram/Nexai-Labs-Site#readme",
+  "devDependencies": {
+    "playwright": "^1.61.1"
+  }
+}
